@@ -1,0 +1,5 @@
+aws_region  = "us-west-2"
+project     = "chef-mind"
+environment = "staging"
+owner       = "infra"
+vpc_cidr    = "10.11.0.0/24"

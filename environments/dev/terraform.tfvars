@@ -1,0 +1,9 @@
+aws_region          = "us-west-2"
+project             = "chef-mind"
+environment         = "dev"
+owner               = "infra"
+vpc_cidr            = "10.10.0.0/26"
+public_subnet_cidrs = ["10.10.0.0/27"]
+public_subnet_azs   = ["us-west-2a"]
+instance_type       = "t3.small"
+dev_ingress_cidrs   = ["0.0.0.0/0"]

@@ -1,0 +1,9 @@
+variable "aws_region" { type = string }
+variable "project" { type = string }
+variable "environment" { type = string }
+variable "owner" { type = string }
+variable "vpc_cidr" { type = string }
+variable "public_subnet_cidrs" { type = list(string) }
+variable "public_subnet_azs" { type = list(string) }
+variable "instance_type" { type = string }
+variable "dev_ingress_cidrs" { type = list(string) }
