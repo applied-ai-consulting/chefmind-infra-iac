@@ -26,3 +26,7 @@ cd environments/dev
 terraform init -reconfigure -backend-config=backend.hcl
 terraform plan
 ```
+
+## Deployment artifacts
+- `deploy/` contains Docker Compose assets for app-adjacent services that run on the provisioned hosts.
+- `deploy/docker-compose.yml` adds a LiteLLM proxy wired to external Postgres (RDS) so spend / usage data survives container replacement.
