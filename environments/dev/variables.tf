@@ -7,3 +7,4 @@ variable "public_subnet_cidrs" { type = list(string) }
 variable "public_subnet_azs" { type = list(string) }
 variable "instance_type" { type = string }
 variable "dev_ingress_cidrs" { type = list(string) }
+variable "ami_id" { type = string }

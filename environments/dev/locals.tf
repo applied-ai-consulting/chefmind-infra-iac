@@ -4,7 +4,6 @@ locals {
     Project     = var.project
     Environment = var.environment
     ManagedBy   = "Terraform"
-    Owner       = var.owner
     Access      = "ssm"
   }
 }

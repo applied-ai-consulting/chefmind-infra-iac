@@ -1,9 +1,10 @@
 resource "aws_security_group" "dev_ec2" {
   name        = "${var.name_prefix}-dev-ec2-sg"
-  description = "Dev EC2 access"
+  description = "Security group for dev EC2"
   vpc_id      = var.vpc_id
 
   ingress {
+    description = "Allowed ingress"
     from_port   = 80
     to_port     = 80
     protocol    = "tcp"
@@ -11,6 +12,7 @@ resource "aws_security_group" "dev_ec2" {
   }
 
   ingress {
+    description = "Allowed ingress"
     from_port   = 443
     to_port     = 443
     protocol    = "tcp"
