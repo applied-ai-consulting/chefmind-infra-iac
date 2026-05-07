@@ -7,3 +7,4 @@ public_subnet_cidrs = ["10.10.0.0/27"]
 public_subnet_azs   = ["us-west-2a"]
 instance_type       = "t3.small"
 dev_ingress_cidrs   = ["0.0.0.0/0"]
+ami_id              = "ami-0a914de4dc1f18727"
