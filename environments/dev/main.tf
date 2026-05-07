@@ -71,7 +71,7 @@ resource "aws_iam_user_policy" "github_actions_core" {
           "ecr:GetDownloadUrlForLayer"
         ]
         Resource = [
-          for name in ["chefmind-backend", "chefmind-web"] :
+          for name in ["chefmind-backend", "chefmind-web", "chefmind-litellm"] :
           "arn:aws:ecr:${var.aws_region}:${data.aws_caller_identity.current.account_id}:repository/${name}"
         ]
       },
